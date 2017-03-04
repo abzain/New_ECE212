@@ -1,0 +1,31 @@
+
+
+q2
+short int fixptmul(short int a, short int b){
+int p;
+p = a * b;
+return p >> 8; /* shift result to extract middle 16 bits */
+}
+
+q3
+void complexmul(short int a[2], short int b[2], short int prod[2]){
+prod[0] = fixptmul(a[0], b[0]) – fixptmul(a[1], b[1]);
+prod[1] = fixptmul(a[0], b[1]) + fixptmul(a[1], b[0]);
+}
+
+q5
+Tests to perform
+ Straight on scan of a number of codes
+ Scan shots at a variety of angles
+ Scan shots under high lighting and low lighting
+ Scan a dirty code
+ Scan a creased code
+ Scan in cold environment (like from freezer or refrigerator)
+ Perform all of the above from a computer, tablet, and phone
+Testing implementation
+ Have both Windows and Mac computers and iOS and Android tablets and phones to test
+with
+ Have codes setup in display to scan
+ Use template or holding rig to provide consistent angle scans
+ Use both with controllable lighting to provide high and low lighting conditions
+ Maintain same dirty and creased codes (possibly print dirty code with false imperfections)

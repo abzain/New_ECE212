@@ -1,0 +1,7 @@
+Running: xsim.dir/Nexys4Test_behav/xsimk.exe -simmode gui -wdb Nexys4Test_behav.wdb -simrunnum 0 -socket 4364
+Design successfully loaded
+Design Loading Memory Usage: 7448 KB (Peak: 7448 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8104 KB (Peak: 8104 KB)
+Simulation CPU Usage: 30 ms

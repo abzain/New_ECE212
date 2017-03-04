@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Feb 06 13:09:40 2017
+# Process ID: 2412
+# Current directory: C:/Users/husseinz/Desktop/ECE212/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3592 C:\Users\husseinz\Desktop\ECE212\Lab1\Lab1.xpr
+# Log file: C:/Users/husseinz/Desktop/ECE212/Lab1/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/ECE212/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Nexys4Test.tcl
+run 10 us
+run all
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run all
+run all
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source Nexys4Test.tcl
+run 10 us
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+save_wave_config {C:/Users/husseinz/Desktop/ECE212/Lab1/Nexys4Test_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/ECE212/Lab1/Nexys4Test_behav.wcfg
+set_property xsim.view C:/Users/husseinz/Desktop/ECE212/Lab1/Nexys4Test_behav.wcfg [get_filesets sim_1]
+close_sim

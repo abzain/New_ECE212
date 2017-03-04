@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
+<application name="pa" timeStamp="Wed Feb 01 16:11:15 2017">
+=======
+<application name="pa" timeStamp="Mon Feb 06 16:42:20 2017">
+>>>>>>> d1dc8bbd3859e0322061224e458a18756fd2ed58
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="7fb0d776725f48c8b5f13ed2483b0d26" type="ProjectID"/>
+<property name="ProjectIteration" value="15" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="7" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="3" type="JavaHandler"/>
+<property name="EditDelete" value="5" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="11" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="3" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="1" type="JavaHandler"/>
+<property name="RefreshDevice" value="5" type="JavaHandler"/>
+<property name="RunBitgen" value="7" type="JavaHandler"/>
+<property name="RunImplementation" value="7" type="JavaHandler"/>
+<property name="RunSynthesis" value="2" type="JavaHandler"/>
+<property name="ShowView" value="4" type="JavaHandler"/>
+<property name="SimulationClose" value="8" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="5" type="JavaHandler"/>
+<property name="SimulationRestart" value="34" type="JavaHandler"/>
+<property name="SimulationRun" value="16" type="JavaHandler"/>
+<property name="SimulationRunAll" value="4" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="156" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<<<<<<< HEAD
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, nexys4DDR (nexys4DDR.sv" value="2" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 458, 249" value="1" type="GuiResourceData"/>
+=======
+<property name="Nexys4Test.sv, 104, 468" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 105, 399" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 106, 657" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 107, 467" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 107, 504" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 109, 468" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 110, 401" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 110, 433" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 110, 435" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 110, 435, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 110, 500" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 110, 554" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 111, 348" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 111, 448" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 111, 503" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 112, 318" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 112, 535" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 112, 535, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 113, 468" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 113, 543" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 113, 736" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 114, 498" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 114, 498, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 115, 702" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 116, 345" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 116, 345, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 116, 641" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 122, 550" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 125, 312" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 137, 395" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 179, 128" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 210, 258" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 237, 487" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 244, 561" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 247, 272" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 319, 313" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 367, 631" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 371, 442" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 387, 707" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 397, 501" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 50, 360" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 52, 519" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 53, 416" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 53, 635" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 541, 192" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 58, 721" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 637, 556" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 67, 448" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 677, 240" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 69, 209" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 69, 247" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 69, 247, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 71, 557" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 72, 452" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 81, 447" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 85, 416" value="2" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 85, 416, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 85, 422" value="2" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 85, 422, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 884, 903" value="1" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 92, 419" value="4" type="GuiResourceData"/>
+<property name="Nexys4Test.sv, 92, 419, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, simulation_live_restart" value="17" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, simulation_live_run_for_time" value="52" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, nexys4DDR (nexys4DDR.sv" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Nexys4Test (Nexys4Test.sv" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="8" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="7" type="GuiResourceData"/>
+<property name="RDIResource.BaseWorkspace_FLOAT, Float" value="2" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="9" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="42" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_OUT, Waveform Viewer_zoom_out" value="7" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1, 174" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 102, 110" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 106, 112" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 115, 228" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 13, -67" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 13, 265" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 15, -55" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 15, -58" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 18, 295" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 19, 88" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 192, 122" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 192, 123" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 21, 267" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 21, 91" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 237, 823" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 25, 83" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 35, 86" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 37, 270" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 4, 174" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 4, 71" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 463, 668" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 50, 162" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 7, 265" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 80, -49" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 9, 181" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 9, 94" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 96, -12" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Nexys4Test_behav.wcfg" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, BTNC], 7, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, BTNL], 2, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, BTNL], 3, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, BTNR], 1, false" value="4" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, BTNU], 5, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, CLK100MHZ], 0, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, btnc_pls], 8, false" value="3" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, btnl_pls], 4, false" value="5" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, btnr_pls], 2, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, btnu_pls], 6, false" value="4" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, cnt[3:0]], 14" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, cnt[3:0]], 14, true" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, solid_clk], 15, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state[1:0]], 13, true" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION, Waveform Viewer_waveform_save_configuration" value="3" type="GuiResourceData"/>
+<property name="debounce.sv, 196, 431" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 208, 433" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 209, 383" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 211, 218" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 223, 372" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 234, 416" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 237, 435" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 246, 684" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 249, 363" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 253, 592" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 257, 399" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 300, 399" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 358, 421" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 368, 435" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 370, 468" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 371, 450" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 377, 485" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 378, 444" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 388, 451" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 390, 533" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 395, 397" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 4, 12" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 401, 599" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 402, 539" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 405, 673" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 437, 401" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 438, 398" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 440, 396" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 458, 298" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 465, 451" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 492, 475" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 510, 643" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 558, 303" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 561, 385" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 569, 572" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 579, 570" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 591, 503" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 661, 448" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 100, 336" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 100, 336, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 108, 245" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 108, 245, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 110, 450" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 110, 450, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 111, 537" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 111, 537, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 112, 435" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 112, 435, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 117, 363" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 117, 363, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 124, 414" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 124, 414, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 125, 557" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 125, 557, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 128, 348" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 128, 348, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 128, 483, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 128, 484" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 130, 351" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 130, 351, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 130, 487" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 130, 487, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 131, 498" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 131, 498, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 133, 265" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 133, 265, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 133, 350" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 133, 350, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 139, 573" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 139, 573, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 142, 179" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 142, 179, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 287, 280" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 343, 420" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 343, 420, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 387, 381" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 403, 448" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 404, 545" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 421, 370" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 451, 439" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 465, 556" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 465, 556, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 466, 551" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 466, 551, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 467, 331" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 467, 345" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 470, 398" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 470, 398, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 476, 554" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 500, 570, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 500, 572" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 504, 416" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 504, 416, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 506, 493" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 557, 313" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 575, 484" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 597, 360" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 604, 142" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 604, 142, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 618, 110" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 618, 110, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 620, 268" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 620, 268, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 626, 439" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 626, 439, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 64, 514" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 64, 514, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 72, 336" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 72, 336, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 80, 420" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 80, 420, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 82, 330" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 82, 330, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 91, 127" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 91, 127, false, false, false, false, true" value="1" type="GuiResourceData"/>
+>>>>>>> d1dc8bbd3859e0322061224e458a18756fd2ed58
+</item>
+<item name="Other">
+<property name="GuiMode" value="7" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<<<<<<< HEAD
+<property name="TclMode" value="6" type="TclMode"/>
+=======
+<property name="TclMode" value="3" type="TclMode"/>
+>>>>>>> d1dc8bbd3859e0322061224e458a18756fd2ed58
+</item>
+</section>
+</application>
+</document>

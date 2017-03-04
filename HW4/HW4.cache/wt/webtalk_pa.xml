@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Mar 02 17:58:31 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="51006c8cfb1f488e83e2348ca31b65da" type="ProjectID"/>
+<property name="ProjectIteration" value="2" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="CoreView" value="1" type="JavaHandler"/>
+<property name="CreateBlockDesign" value="2" type="JavaHandler"/>
+<property name="CustomizeCore" value="2" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="2" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
+<property name="EditProperties" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RecustomizeCore" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="1" type="JavaHandler"/>
+<property name="ToolsTemplates" value="2" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="MACC.sv, 123, 203" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 17, 399" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 25, 98" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 25, 98, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 272, 458" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 39, 398" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 39, 398, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 492, 444" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 51, 418" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 51, 418, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 73, 428" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 80, 455" value="1" type="GuiResourceData"/>
+<property name="MACC.sv, 96, 419" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="14" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="12" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

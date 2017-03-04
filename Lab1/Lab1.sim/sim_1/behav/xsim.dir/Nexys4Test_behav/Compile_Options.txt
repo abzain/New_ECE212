@@ -1,0 +1,1 @@
+-wto "23e7573c4bdd4b12895f2091c0b5433b" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Nexys4Test_behav" "xil_defaultlib.Nexys4Test" "xil_defaultlib.glbl" -log "elaborate.log" 

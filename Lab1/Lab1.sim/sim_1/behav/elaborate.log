@@ -1,0 +1,22 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 23e7573c4bdd4b12895f2091c0b5433b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Nexys4Test_behav xil_defaultlib.Nexys4Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=10)
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=20)
+Compiling module xil_defaultlib.nexys4DDR
+Compiling module xil_defaultlib.Nexys4Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Nexys4Test_behav

@@ -1,0 +1,610 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Feb 06 13:09:40 2017
+# Process ID: 2412
+# Current directory: C:/Users/husseinz/Desktop/ECE212/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3592 C:\Users\husseinz\Desktop\ECE212\Lab1\Lab1.xpr
+# Log file: C:/Users/husseinz/Desktop/ECE212/Lab1/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/ECE212/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:38]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:39]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:53]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:58]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:62]
+ERROR: [VRFC 10-1040] module Nexys4Test ignored due to previous errors [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library work [C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library work [C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library work [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv:1]
+[Mon Feb 06 13:22:33 2017] Launched synth_1...
+Run output will be captured here: C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.runs/synth_1/runme.log
+launch_runs impl_1
+[Mon Feb 06 13:24:03 2017] Launched impl_1...
+Run output will be captured here: C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.runs/impl_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:38]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:39]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:53]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:58]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:62]
+ERROR: [VRFC 10-1040] module Nexys4Test ignored due to previous errors [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:53]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:58]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:62]
+ERROR: [VRFC 10-1040] module Nexys4Test ignored due to previous errors [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:53]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:58]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:62]
+ERROR: [VRFC 10-1040] module Nexys4Test ignored due to previous errors [C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 23e7573c4bdd4b12895f2091c0b5433b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Nexys4Test_behav xil_defaultlib.Nexys4Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=2) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=1)
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=2)
+Compiling module xil_defaultlib.nexys4DDR
+Compiling module xil_defaultlib.Nexys4Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Nexys4Test_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xsim.dir/Nexys4Test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 06 13:27:11 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nexys4Test_behav -key {Behavioral:sim_1:Functional:Nexys4Test} -tclbatch {Nexys4Test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Nexys4Test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nexys4Test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 10 us
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 919.059 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 23e7573c4bdd4b12895f2091c0b5433b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Nexys4Test_behav xil_defaultlib.Nexys4Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=10)
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=20)
+Compiling module xil_defaultlib.nexys4DDR
+Compiling module xil_defaultlib.Nexys4Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Nexys4Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 23e7573c4bdd4b12895f2091c0b5433b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Nexys4Test_behav xil_defaultlib.Nexys4Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=10)
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=20)
+Compiling module xil_defaultlib.nexys4DDR
+Compiling module xil_defaultlib.Nexys4Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Nexys4Test_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/xsim.dir/Nexys4Test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 06 14:48:41 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nexys4Test_behav -key {Behavioral:sim_1:Functional:Nexys4Test} -tclbatch {Nexys4Test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source Nexys4Test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nexys4Test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 10 us
+run 10 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 23e7573c4bdd4b12895f2091c0b5433b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Nexys4Test_behav xil_defaultlib.Nexys4Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=10)
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=20)
+Compiling module xil_defaultlib.nexys4DDR
+Compiling module xil_defaultlib.Nexys4Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Nexys4Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Nexys4Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Nexys4Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.srcs/sim_1/new/Nexys4Test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Nexys4Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/husseinz/Desktop/ECE212/Lab1/Lab1.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 23e7573c4bdd4b12895f2091c0b5433b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Nexys4Test_behav xil_defaultlib.Nexys4Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=10)
+Compiling module xil_defaultlib.clkdiv(DIVFREQ=20)
+Compiling module xil_defaultlib.nexys4DDR
+Compiling module xil_defaultlib.Nexys4Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Nexys4Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 10 us
+run 10 us
+save_wave_config {C:/Users/husseinz/Desktop/ECE212/Lab1/Nexys4Test_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/ECE212/Lab1/Nexys4Test_behav.wcfg
+set_property xsim.view C:/Users/husseinz/Desktop/ECE212/Lab1/Nexys4Test_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 06 14:53:25 2017...

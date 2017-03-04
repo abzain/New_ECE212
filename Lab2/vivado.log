@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Feb 21 08:53:05 2017
+# Process ID: 3752
+# Current directory: C:/Users/husseinz/Desktop/ece_212/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1996 C:\Users\husseinz\Desktop\ece_212\Lab2\Lab2.xpr
+# Log file: C:/Users/husseinz/Desktop/ece_212/Lab2/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/ece_212/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/ece_212/Lab2/Lab2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/husseinz/Desktop/ECE212/ECE212/Lab2' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/husseinz/Desktop/ece_212/Lab2/Lab2.ip_user_files', nor could it be found using path 'C:/Users/husseinz/Desktop/ECE212/ECE212/Lab2/Lab2.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 21 09:05:09 2017...
