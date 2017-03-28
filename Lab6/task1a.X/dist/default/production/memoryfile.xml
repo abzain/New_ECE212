@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="dist/default/production/LafBot.X.production.elf">                 
+  <executable name="dist/default/production/task1a.X.production.elf">                 
     <memory name="program">                 
       <units>bytes</units>                 
       <length>132240</length>                 
-      <used>3604</used>                     
-      <free>128636</free>                     
+      <used>1560</used>                     
+      <free>130680</free>                     
     </memory>                              
     <memory name="data">              
       <units>bytes</units>                 
