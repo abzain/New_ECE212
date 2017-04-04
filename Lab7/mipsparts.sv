@@ -69,6 +69,19 @@ module mux2 #(parameter WIDTH = 8)
              (input  logic [WIDTH-1:0] d0, d1, 
               input  logic             s, 
               output logic [WIDTH-1:0] y);
+endmodule
 
-  assign y = s ? d1 : d0; 
+//MODIFIED MUX TO TAKE EXTRA INPUT              
+module mux3 #(parameter WIDTH = 6)
+               (input  logic [WIDTH-1:0] d0, d1, k, 
+                input  logic [1:0]       s, 
+                output logic [WIDTH-1:0] y);
+
+ always_comb
+    case(s)
+        2'b00: y <= d0;
+        2'b01: y <= k;
+        2'b10: y <= d1;
+        default: y <= 6'dx;
+    endcase
 endmodule
