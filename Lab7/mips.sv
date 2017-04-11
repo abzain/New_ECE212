@@ -120,11 +120,7 @@ module datapath(input  logic        clk, reset,
 
   logic [4:0]  writereg;
   logic [31:0] pcnext, pcnextbr, pcplus4, pcbranch;
-<<<<<<< HEAD
-  logic [31:0] signimm, signimmsh, zeroext; //ADDED ZEROEXT
-=======
   logic [31:0] signimm, signimmsh, zeroimm; //ADDED ZEROIMM
->>>>>>> origin/master
   logic [31:0] srca, srcb;
   logic [31:0] result;
 
@@ -148,13 +144,9 @@ module datapath(input  logic        clk, reset,
   mux2 #(32)  resmux(aluout, readdata,
                      memtoreg, result);
   signext     se(instr[15:0], signimm);
-<<<<<<< HEAD
-  zeroext     ze(instr[15:0], zeroext);
-=======
 
   zeroext     ze(instr[15:0], zeroimm); //ZERO EXTENDER ADDED
   
->>>>>>> origin/master
   // ALU logic
   mux3 #(32)  srcbmux(writedata, signimm, zeroimm, alusrc,  //EXPANDED MUX WITH ADDITIONAL ZEROIMM input
                       srcb);

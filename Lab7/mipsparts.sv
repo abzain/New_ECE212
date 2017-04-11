@@ -44,19 +44,11 @@ module signext(input  logic [15:0] a,
   assign y = {{16{a[15]}}, a};
 endmodule
 
-<<<<<<< HEAD
-//ADDED ZERO EXTENDER
-module zeroext(input  logic [15:0] a,
-               output logic [31:0] y);
-              
-  assign y = {{16{1'b0}}, a};
-=======
 //zero extending added
 module zeroext(input  logic [15:0] a,
                output logic [31:0] y);
               
   assign y = {16'h0000, a};
->>>>>>> origin/master
 endmodule
 
 module flopr #(parameter WIDTH = 8)
@@ -99,15 +91,6 @@ module mux3 #(parameter WIDTH = 8)
                 input  logic [1:0]       s, 
                 output logic [WIDTH-1:0] y);
 
-<<<<<<< HEAD
-// always_comb
-//    case(s)
-//        2'b00: y <= d0;
-//        2'b01: y <= k;
-//        2'b10: y <= d1;
-//        default: y <= 6'dx;
-//    endcase
-=======
      always_comb
         case(s)
             2'b00: y <= d0;
@@ -115,5 +98,4 @@ module mux3 #(parameter WIDTH = 8)
             2'b10: y <= k;
             default: y <= 8'hxx;
         endcase
->>>>>>> origin/master
 endmodule

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Apr 11 12:07:22 2017
+# Process ID: 1056
+# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7128 C:\Users\husseinz\Desktop\New_ECE212\Lab7\Lab_7\Lab_7.xpr
+# Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/ECE212/Lab3/Lab3.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/husseinz/Desktop/ECE212/Lab3/Lab3.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 661.773 ; gain = 36.305
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 12:10:22 2017...

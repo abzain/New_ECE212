@@ -1,0 +1,11 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab7Updated/Lab7Updated.sim/sim_1/behav/glbl.v,1476033524,verilog,,,,glbl,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/Lab_7.srcs/sources_1/new/alu.sv,1491881703,systemVerilog,,,,alu,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab7/mips.sv,1491927428,systemVerilog,,,,aludec;controller;datapath;maindec;mips,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab7/mipsmem.sv,1491929158,systemVerilog,,,,dmem;imem,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab7/mipsparts.sv,1491927488,systemVerilog,,,,adder;flopenr;flopr;mux2;mux3;regfile;signext;sl2;zeroext,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab7/mipstest.sv,1491881966,systemVerilog,,,,testbench,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab7/mipstop.sv,1491871499,systemVerilog,,,,top,,,,,,,,
