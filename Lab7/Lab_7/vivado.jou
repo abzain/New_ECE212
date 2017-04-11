@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Apr 10 20:48:45 2017
+# Process ID: 6832
+# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2600 C:\Users\husseinz\Desktop\New_ECE212\Lab7\Lab_7\Lab_7.xpr
+# Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/Lab_7.xpr
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab7/memfile.dat
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/testbench_behav.wcfg
+source testbench.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 ms
+run 10 ms
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/testbench_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/testbench_behav.wcfg}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab7/memfile2.dat
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/testbench_behav.wcfg}
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/testbench_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/testbench_behav.wcfg}
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/testbench_behav.wcfg}
+close_sim
