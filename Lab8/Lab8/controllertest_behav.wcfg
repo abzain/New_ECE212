@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="controllertest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="controllertest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="360000000fs"></ZoomStartTime>
+      <ZoomEndTime time="554400001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/controllertest/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/op" type="array">
+      <obj_property name="ElementShortName">op[5:0]</obj_property>
+      <obj_property name="ObjectShortName">op[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/funct" type="array">
+      <obj_property name="ElementShortName">funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/dut/md/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/alucontrol" type="array">
+      <obj_property name="ElementShortName">alucontrol[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alucontrol[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/pcen" type="logic">
+      <obj_property name="ElementShortName">pcen</obj_property>
+      <obj_property name="ObjectShortName">pcen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controllertest/dut/md/controls" type="array">
+      <obj_property name="ElementShortName">controls[14:0]</obj_property>
+      <obj_property name="ObjectShortName">controls[14:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
