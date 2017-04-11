@@ -1,11 +1,8 @@
-Vivado Simulator 2016.2
+Vivado Simulator 2016.3
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 916663e7e4234f63859a75e6887729b0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 916663e7e4234f63859a75e6887729b0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port alusrc [C:/Users/husseinz/Desktop/New_ECE212/Lab7/mips.sv:31]
-WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port alusrc [C:/Users/husseinz/Desktop/New_ECE212/Lab7/mips.sv:34]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port s [C:/Users/husseinz/Desktop/New_ECE212/Lab7/mips.sv:146]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab_7/Lab_7.srcs/sources_1/new/alu.sv" Line 23. Module alu has a timescale but at least one module in design doesn't have timescale.

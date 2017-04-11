@@ -17,7 +17,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/New
 INFO: [VRFC 10-311] analyzing module mips
 INFO: [VRFC 10-311] analyzing module controller
 INFO: [VRFC 10-311] analyzing module maindec
-INFO: [VRFC 10-2458] undeclared symbol bne, assumed default net type wire [C:/Users/husseinz/Desktop/New_ECE212/Lab7/mips.sv:71]
 INFO: [VRFC 10-311] analyzing module aludec
 INFO: [VRFC 10-311] analyzing module datapath
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/New_ECE212/Lab7/mipstop.sv" into library xil_defaultlib

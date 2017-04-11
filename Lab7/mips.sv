@@ -28,10 +28,10 @@ module mips(input  logic        clk, reset,
 
   controller c(instr[31:26], instr[5:0], zero, 
                memtoreg, memwrite, pcsrc,
-               alusrc, regdst, regwrite, jump,
+               alusrc [1:0], regdst, regwrite, jump,
                alucontrol);
   datapath dp(clk, reset, memtoreg, pcsrc,
-              alusrc, regdst, regwrite, jump,
+              alusrc [1:0], regdst, regwrite, jump,
               alucontrol,
               zero, pc, instr, 
               aluout, writedata, readdata);
@@ -40,18 +40,19 @@ endmodule
 module controller(input  logic [5:0] op, funct,
                   input  logic       zero, 
                   output logic       memtoreg, memwrite,
-                  output logic       pcsrc, alusrc,
+                  output logic       pcsrc, 
+                  output logic [1:0] alusrc,
                   output logic       regdst, regwrite,
                   output logic       jump,
                   output logic [2:0] alucontrol);
 
   logic [1:0] aluop;
   logic       branch;
-  logic  bne; //ADDED BNE
+  logic       bne; //ADDED BNE
   
   maindec md(op, memtoreg, memwrite, branch,
              alusrc, regdst, regwrite, jump,
-             aluop);
+             bne, aluop);
   aludec  ad(funct, aluop, alucontrol);
 
   assign pcsrc = branch & ( zero ^ bne );   //XOR zero and bne
@@ -59,9 +60,10 @@ endmodule
 
 module maindec(input  logic [5:0] op,
                output logic       memtoreg, memwrite,
-               output logic       branch, alusrc,
+               output logic       branch, 
+               output logic [1:0] alusrc,
                output logic       regdst, regwrite,
-               output logic       jump,
+               output logic       jump, bne,
                output logic [1:0] aluop);
 
   logic [10:0] controls;        //EXPANDED FROM 9 to 11 BITS
@@ -92,7 +94,7 @@ module aludec(input  logic [5:0] funct,
     case(aluop)
       2'b00: alucontrol <= 3'b010;  // add
       2'b01: alucontrol <= 3'b110;  // sub
-      2'b11: alucontrol <= 3'b001;  // ori  //ADDED
+      2'b11: alucontrol <= 3'b001;  // ori  //ADDED ORI CONTROL SIGNAL
       default: case(funct)          // RTYPE
           6'b100000: alucontrol <= 3'b010; // ADD
           6'b100010: alucontrol <= 3'b110; // SUB
@@ -106,7 +108,8 @@ endmodule
 
 module datapath(input  logic        clk, reset,
                 input  logic        memtoreg, pcsrc,
-                input  logic        alusrc, regdst,
+                input  logic [1:0]  alusrc, 
+                input  logic        regdst,
                 input  logic        regwrite, jump,
                 input  logic [2:0]  alucontrol,
                 output logic        zero,
@@ -117,7 +120,11 @@ module datapath(input  logic        clk, reset,
 
   logic [4:0]  writereg;
   logic [31:0] pcnext, pcnextbr, pcplus4, pcbranch;
+<<<<<<< HEAD
   logic [31:0] signimm, signimmsh, zeroext; //ADDED ZEROEXT
+=======
+  logic [31:0] signimm, signimmsh, zeroimm; //ADDED ZEROIMM
+>>>>>>> origin/master
   logic [31:0] srca, srcb;
   logic [31:0] result;
 
@@ -141,9 +148,15 @@ module datapath(input  logic        clk, reset,
   mux2 #(32)  resmux(aluout, readdata,
                      memtoreg, result);
   signext     se(instr[15:0], signimm);
+<<<<<<< HEAD
   zeroext     ze(instr[15:0], zeroext);
+=======
+
+  zeroext     ze(instr[15:0], zeroimm); //ZERO EXTENDER ADDED
+  
+>>>>>>> origin/master
   // ALU logic
-  mux3 #(32)  srcbmux(writedata, signimm, zeroext, alusrc,  //EXPANDED MUX WITH ADDITIONAL ZEROEXT input
+  mux3 #(32)  srcbmux(writedata, signimm, zeroimm, alusrc,  //EXPANDED MUX WITH ADDITIONAL ZEROIMM input
                       srcb);
   alu         alu(.a(srca), .b(srcb), .f(alucontrol),
                   .y(aluout), .zero(zero));

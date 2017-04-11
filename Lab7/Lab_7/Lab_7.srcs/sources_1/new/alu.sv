@@ -28,20 +28,21 @@ module alu(
     output logic zero
     );
     
-    logic [31:0] And, Or, Add, Aand, Aor, Sub, Slt;
+    logic [31:0] A_nd, O_r, Add, Aand, Aor, Sub, Slt;
     
-    assign And = a & b;
-    assign Or = a|b;
+    assign A_nd = a & b;
+    assign O_r = a|b;
     assign Add = a + b;
     assign Aand = a & ~b;
     assign Aor = a|~b;
     assign Sub = a - b;
     assign Slt = (a < b ) ? 1 : 0;  //if(a<b) y=1; else y=0;
+    assign zero = 1'b0;
       
     always_comb
         case( f )
-            3'b000: y <= And;
-            3'b001: y <= Or;
+            3'b000: y <= A_nd;
+            3'b001: y <= O_r;
             3'b010: y <= Add;
             //2'b011: y <= 32'dx;
             3'b100: y <= Aand;
