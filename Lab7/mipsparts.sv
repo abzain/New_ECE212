@@ -44,6 +44,13 @@ module signext(input  logic [15:0] a,
   assign y = {{16{a[15]}}, a};
 endmodule
 
+//ADDED ZERO EXTENDER
+module zeroext(input  logic [15:0] a,
+               output logic [31:0] y);
+              
+  assign y = {{16{1'b0}}, a};
+endmodule
+
 module flopr #(parameter WIDTH = 8)
               (input  logic             clk, reset,
                input  logic [WIDTH-1:0] d, 
@@ -72,16 +79,16 @@ module mux2 #(parameter WIDTH = 8)
 endmodule
 
 //MODIFIED MUX TO TAKE EXTRA INPUT              
-module mux3 #(parameter WIDTH = 6)
+module mux3 #(parameter WIDTH = 8)
                (input  logic [WIDTH-1:0] d0, d1, k, 
                 input  logic [1:0]       s, 
                 output logic [WIDTH-1:0] y);
 
- always_comb
-    case(s)
-        2'b00: y <= d0;
-        2'b01: y <= k;
-        2'b10: y <= d1;
-        default: y <= 6'dx;
-    endcase
+// always_comb
+//    case(s)
+//        2'b00: y <= d0;
+//        2'b01: y <= k;
+//        2'b10: y <= d1;
+//        default: y <= 6'dx;
+//    endcase
 endmodule

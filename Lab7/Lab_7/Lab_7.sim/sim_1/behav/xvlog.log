@@ -3,6 +3,7 @@ INFO: [VRFC 10-311] analyzing module regfile
 INFO: [VRFC 10-311] analyzing module adder
 INFO: [VRFC 10-311] analyzing module sl2
 INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-311] analyzing module zeroext
 INFO: [VRFC 10-311] analyzing module flopr
 INFO: [VRFC 10-311] analyzing module flopenr
 INFO: [VRFC 10-311] analyzing module mux2

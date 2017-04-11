@@ -24,6 +24,7 @@ Compiling module xil_defaultlib.mux2(WIDTH=32)
 Compiling module xil_defaultlib.regfile
 Compiling module xil_defaultlib.mux2(WIDTH=5)
 Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.zeroext
 Compiling module xil_defaultlib.mux3(WIDTH=32)
 Compiling module xil_defaultlib.alu
 Compiling module xil_defaultlib.datapath
