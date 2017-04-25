@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Apr 25 13:49:05 2017
+# Process ID: 4468
+# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab7Updated
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3820 C:\Users\husseinz\Desktop\New_ECE212\Lab7\Lab7Updated\Lab7Updated.xpr
+# Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab7Updated/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab7Updated\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/New_ECE212/Lab7/Lab7Updated/Lab7Updated.xpr
+update_compile_order -fileset sources_1

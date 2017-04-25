@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Apr 25 15:21:01 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="4f3dbf73bc094e85a90affecca09b0d8" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="4" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="4" type="GuiResourceData"/>
+<property name="NEXT, Next " value="10" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, pipeline_mips" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, SystemVerilog, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 2, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, pipe_datapath.sv], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, pipe_datapath.sv], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, pipe_datapath.sv], 2, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, mips_pipeline (pipe_controller.sv" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, pipeline_mips (pipeline_mips.sv" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Boards" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Nexys4 ; digilentinc.com ; B.1 ; xc7a100tcsg324-1 ; 324 ; 1.1 ; 135 ; 240 ; 126800 ; 0 ; 0 ; 210 ; 63400 ; 6 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0 ; 0 ; 0 ; 0, 6, Nexys4, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Lab10" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, Toggle Line Comments" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_DELETE, Remove File from Project..." value="2" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_LINE_COMMENT, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="10" type="GuiResourceData"/>
+<property name="pipe_controller.sv, 350, 419" value="1" type="GuiResourceData"/>
+<property name="pipe_controller.sv, 448, 206" value="1" type="GuiResourceData"/>
+<property name="pipe_controller.sv, 448, 426" value="1" type="GuiResourceData"/>
+<property name="pipe_controller.sv, 459, 478" value="1" type="GuiResourceData"/>
+<property name="pipe_controller.sv, 535, 457" value="1" type="GuiResourceData"/>
+<property name="pipe_datapath.sv, 205, 82" value="1" type="GuiResourceData"/>
+<property name="pipe_datapath.sv, 548, 254" value="1" type="GuiResourceData"/>
+<property name="pipe_datapath.sv, 73, 259" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 114, 164" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 120, 212" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 123, 144" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 125, 165" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 130, 479" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 130, 479, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 131, 529" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 137, 114" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 137, 251" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 149, 40" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 149, 63" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 149, 65" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 152, 148" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 153, 79" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 154, 114" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 154, 131" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 154, 248" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 154, 96" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 155, 164" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 155, 211" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 155, 47" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 160, 249" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 161, 180" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 161, 197" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 161, 260" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 161, 283" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 161, 366" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 162, 196" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 162, 231" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 168, 401" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 172, 163" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 181, 195" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 182, 177" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 188, 297" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 189, 216" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 189, 232" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 189, 281" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 189, 355" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 190, 264" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 191, 248" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 191, 366" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 198, 439" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 200, 158" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 203, 162" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 203, 162, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 205, 145" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 205, 386" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 210, 281" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 211, 222" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 214, 383" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 219, 181" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 221, 315" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 222, 296" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 224, 436" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 228, 449" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 233, 348" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 237, 296" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 239, 350" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 246, 385" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 247, 299" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 247, 397" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 25, 294" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 25, 353" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 253, 320" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 26, 179" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 26, 182" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 26, 365" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 261, 315" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 264, 214" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 267, 415" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 27, 161" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 27, 162" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 27, 167" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 27, 204" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 276, 188" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 278, 350" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 28, 316" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 281, 484" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 284, 486" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 286, 329" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 289, 401" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 29, 211" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 295, 401" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 300, 273" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 304, 366" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 310, 382" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 316, 216" value="2" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 316, 216, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 320, 169" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 322, 104" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 322, 401" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 323, 459" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 325, 356" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 327, 327" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 330, 345" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 338, 429" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 342, 321" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 360, 502" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 361, 268" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 364, 284" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 366, 109" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 370, 111" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 371, 529" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 372, 333" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 384, 332" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 386, 485" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 388, 280" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 398, 434" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 399, 377" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 402, 403" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 402, 467" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 404, 351" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 405, 382" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 408, 194" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 408, 387" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 422, 211" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 430, 314" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 430, 403" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 436, 313" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 44, 308" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 44, 308, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 440, 363" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 455, 286" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 456, 442" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 459, 349" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 465, 352" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 467, 285" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 469, 375" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 469, 439" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 475, 367" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 477, 279" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 486, 258" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 49, 403" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 495, 382" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 502, 405" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 509, 166" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 509, 288" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 51, 417" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 516, 435" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 517, 315" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 518, 336" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 521, 314" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 522, 391" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 532, 392" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 54, 150, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 553, 404" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 560, 500" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 578, 287" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 578, 323" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 586, 318" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 601, 403" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 603, 332" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 606, 260" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 629, 446" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 63, 217" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 657, 205" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 67, 233" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 67, 245" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 670, 354" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 673, 348" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 69, 194" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 69, 299" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 69, 420" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 70, 293" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 70, 314" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 70, 315" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 71, 352" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 72, 231" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 72, 296" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 754, 348" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 76, 265" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 76, 281" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 769, 163" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 80, 315" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 84, 318" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 84, 318, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 84, 383" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 88, 214" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 88, 214, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 93, 469" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 95, 488" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 96, 530" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 97, 384" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 97, 384, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="pipeline_mips.sv, 97, 57" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="21" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="18" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
