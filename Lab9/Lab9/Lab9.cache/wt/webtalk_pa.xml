@@ -3,7 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Mon May 01 15:35:56 2017">
+=======
+<application name="pa" timeStamp="Tue Apr 25 21:21:04 2017">
+>>>>>>> origin/master
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="c5ae69e25fa34efab4f2f9ae14624e9b" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -26,6 +30,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
+<<<<<<< HEAD
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Data Files], 27, true" value="1" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, adder (mipsparts.sv" value="2" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, top (topmulti.sv" value="13" type="GuiResourceData"/>
@@ -58,6 +63,19 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="GuiMode" value="22" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="19" type="TclMode"/>
+=======
+<property name="BaseDialog_OK" value="1" type="GuiResourceData"/>
+<property name="CmdMsgDialog_OK" value="1" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="21" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, top (topmulti.sv" value="4" type="GuiResourceData"/>
+<property name="mipsmulti.sv, 107, 455" value="1" type="GuiResourceData"/>
+<property name="mipsmulti.sv, 366, 293" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="11" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="9" type="TclMode"/>
+>>>>>>> origin/master
 </item>
 </section>
 </application>
