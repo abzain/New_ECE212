@@ -1,21 +1,11 @@
 #-----------------------------------------------------------
-<<<<<<< HEAD
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Mon May 01 15:25:25 2017
-# Process ID: 4392
+# Start of session at: Tue May 02 13:15:22 2017
+# Process ID: 6696
 # Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab9/Lab9
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4920 C:\Users\husseinz\Desktop\New_ECE212\Lab9\Lab9\Lab9.xpr
-=======
-# Vivado v2016.3 (64-bit)
-# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
-# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue Apr 25 21:06:08 2017
-# Process ID: 6032
-# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab9/Lab9
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8164 C:\Users\husseinz\Desktop\New_ECE212\Lab9\Lab9\Lab9.xpr
->>>>>>> origin/master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6604 C:\Users\husseinz\Desktop\New_ECE212\Lab9\Lab9\Lab9.xpr
 # Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab9/Lab9/vivado.log
 # Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab9/Lab9\vivado.jou
 #-----------------------------------------------------------
@@ -23,12 +13,15 @@ start_gui
 open_project C:/Users/husseinz/Desktop/New_ECE212/Lab9/Lab9/Lab9.xpr
 Scanning sources...
 Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DSANumComputeUnits
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimRadix
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTimeUnit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimArrayDisplayLimit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTraceLimit
+WARNING: [Project 1-231] Project 'Lab9.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
 exit
-<<<<<<< HEAD
-INFO: [Common 17-206] Exiting Vivado at Mon May 01 15:35:59 2017...
-=======
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 21:21:07 2017...
->>>>>>> origin/master
+INFO: [Common 17-206] Exiting Vivado at Tue May 02 13:17:46 2017...
