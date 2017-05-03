@@ -11,14 +11,10 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="309815951fs"></ZoomStartTime>
-      <ZoomEndTime time="1138036810fs"></ZoomEndTime>
+      <ZoomStartTime time="692916666fs"></ZoomStartTime>
+      <ZoomEndTime time="1061416667fs"></ZoomEndTime>
       <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
-   <column_width_setting>
-      <NameColumnWidth column_width="123"></NameColumnWidth>
-      <ValueColumnWidth column_width="65"></ValueColumnWidth>
-   </column_width_setting>
    <WVObjectSize size="14" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>

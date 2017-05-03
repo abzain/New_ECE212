@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed May 03 15:13:15 2017
+# Process ID: 6408
+# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_only_pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7388 C:\Users\husseinz\Desktop\New_ECE212\Lab10\Lab10_only_pipeline\Lab10_only_pipeline.xpr
+# Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_only_pipeline/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_only_pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_only_pipeline/Lab10_only_pipeline.xpr
+update_compile_order -fileset sources_1
+save_project_as Lab10_editable_non_hazard_unit C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_editable_non_hazard_unit -force
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_only_pipeline/testbench_behav.wcfg
+source testbench.tcl
+relaunch_sim
+close_sim
