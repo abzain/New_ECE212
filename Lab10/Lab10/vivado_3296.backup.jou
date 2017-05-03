@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon May 01 17:37:23 2017
+# Process ID: 3296
+# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5940 C:\Users\husseinz\Desktop\New_ECE212\Lab10\Lab10\Lab10.xpr
+# Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.xpr
+launch_simulation
+source testbench.tcl
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg
+set_property xsim.view C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+close_project
+create_project Lab10_no_hazard_unit C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit -part xc7a200tfbg676-2
+set_property board_part xilinx.com:ac701:part0:1.3 [current_project]
+add_files -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/memfile.dat
+add_files -norecurse {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/mem.sv C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/top.sv}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/mipstest.sv
+launch_simulation
+source testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

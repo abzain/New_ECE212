@@ -19,16 +19,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 module pipeline_mips(
     input logic         clk, reset,
-    output logic [31:0] pcF,
+    input logic [31:0]  readdataM,
     input logic [31:0]  instrF,
+    output logic [31:0] pcF,
     output logic        memwriteM,
-    output logic [31:0] aluoutM, writedataM,
-    input logic [31:0]  readdataM);
+    output logic [31:0] aluoutM, writedataM);
     
-    logic [5:0] opD, functD;
+    logic [5:0] opD, functD, alucontrolE;
     logic       regdstE, alusrcE,pcsrcD,memtoregE, memtoregM, 
                 memtoregW, regwriteE, regwriteM, regwriteW;
-    logic [5:0] alucontrolE;
     logic       flushE, equalD, branchD, jumpD, zeroextendD;
     
     controller c(clk, reset, opD, functD, flushE, equalD,
@@ -53,13 +52,12 @@ module controller(  input logic clk, reset,
                     output logic [5:0] alucontrolE);
     
     logic [3:0] aluopD;
-    logic       memToRegM, memwriteD, alusrcD,regdstD, regwriteD;
+    logic       memToRegM, memwriteD, alusrcD,regdstD, regwriteD, memwriteE;
     logic [5:0] alucontrolD;
-    logic       memwriteE;
     
     // main decoder
-    maindec md(opD, memtoregD, memwriteD, branchD,alusrcD, regdstD, 
-    regwriteD, jumpD,zeroextendD, aluopD);
+    maindec md( opD, memtoregD, memwriteD, branchD,alusrcD, regdstD, 
+                regwriteD, jumpD,zeroextendD, aluopD);
     
     // alu decoder
     aludec ad(functD, aluopD, alucontrolD);
@@ -78,7 +76,8 @@ module controller(  input logic clk, reset,
     {memtoregM, memwriteM, regwriteM});
     
     // register between Memory and Writeback stages
-    flopr #(2) regW(clk, reset,{memtoregM, regwriteM},{memtoregW, regwriteW});
+    flopr #(2) regW(clk, reset,
+    {memtoregM, regwriteM},{memtoregW, regwriteW});
 endmodule
 
 //module for the DataPath of the processor
@@ -90,11 +89,11 @@ module datapath(input logic clk, reset,
                 input logic jumpD,
                 input logic zeroextendD,
                 input logic [5:0] alucontrolE,
+                input logic [31:0] readdataM,
+                input logic [31:0] instrF,
                 output logic equalD,
                 output logic [31:0] pcF,
-                input logic [31:0] instrF,
                 output logic [31:0] aluoutM, writedataM,
-                input logic [31:0] readdataM,
                 output logic [5:0] opD, functD,
                 output logic flushE);
 	
@@ -114,20 +113,20 @@ module datapath(input logic clk, reset,
 	logic [31:0] readdataW, resultW;
 	
 	// Hazard Unit
-	hazard h(rsD, rtD, rsE, rtE, writeregE, writeregM, writeregW,
-	regwriteE, regwriteM, regwriteW,
-	memtoregE, memtoregM, branchD,
-	forwardaD, forwardbD, forwardaE, forwardbE,
-	stallF, stallD, flushE);
+	hazard h(  rsD, rtD, rsE, rtE, writeregE, writeregM, writeregW,
+	           regwriteE, regwriteM, regwriteW,
+	           memtoregE, memtoregM, branchD,
+	           forwardaD, forwardbD, forwardaE, forwardbE,
+	           stallF, stallD, flushE);
 	
 	// next PC logic
 	mux2 #(32) pcbrmux(pcplus4F, pcbranchD, pcsrcD, pcnextbrFD);
 	mux2 #(32) pcmux(pcnextbrFD,{pcplus4D[31:28], instrD[25:0], 2'b00},
-	jumpD, pcnextFD);
+	                 jumpD, pcnextFD);
 	
 	// register file -used in decode and writeback
 	regfile rf(clk, regwriteW, rsD, rtD, writeregW,
-	resultW, srcaD, srcbD);
+	           resultW, srcaD, srcbD);
 	
 	//Fetch stage logic
 	flopenr #(32) pcreg(clk, reset, ~stallF, pcnextFD, pcF);
@@ -370,7 +369,7 @@ module maindec(input logic [5:0] op,
 		6'b101011: controls = 12'b00101000_0000; //SW
 		default: begin
             $display("Error-MainDec", op);
-            controls = 12'bxxxxxxxxx; // unknown instruction
+            controls = 12'bxxxxxxxxxxxx; // unknown instruction
 		end
 		endcase
 endmodule

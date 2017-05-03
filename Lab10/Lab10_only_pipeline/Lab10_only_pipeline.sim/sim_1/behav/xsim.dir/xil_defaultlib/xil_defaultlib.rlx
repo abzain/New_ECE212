@@ -1,0 +1,9 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/mem.sv,1493169112,systemVerilog,,,,mem,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/mipstest.sv,1493169902,systemVerilog,,,,testbench,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv,1493767592,systemVerilog,,,,adder;alu;aludec;controller;datapath;eqcmp;flopenr;flopenrc;flopr;floprc;maindec;mux2;mux3;mux4;pipeline_mips;regfile;signext;sl2,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/top.sv,1493169769,systemVerilog,,,,top,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_only_pipeline/Lab10_only_pipeline.sim/sim_1/behav/glbl.v,1476033524,verilog,,,,glbl,,,,,,,,

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue May 02 17:16:02 2017
+# Process ID: 5788
+# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6128 C:\Users\husseinz\Desktop\New_ECE212\Lab10\Lab10_no_hazard_unit\Lab10_no_hazard_unit.xpr
+# Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/Lab10_no_hazard_unit.xpr
+launch_simulation
+source testbench.tcl
+relaunch_sim
+run 10 ms
+run 10 ms
+run 10 s
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/testbench_behav.wcfg
+set_property xsim.view C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/testbench_behav.wcfg [get_filesets sim_1]
+close_sim
