@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Lafayette College
 // Engineer: Zainab Hussein
@@ -18,26 +17,28 @@
 // Additional Comments:
 //////////////////////////////////////////////////////////////////////////////////
 module pipeline_mips(
-    input logic         clk, reset,
-    input logic [31:0]  readdataM,
-    input logic [31:0]  instrF,
-    output logic [31:0] pcF,
-    output logic        memwriteM,
-    output logic [31:0] aluoutM, writedataM);
+    input clk, reset,
+    output memwriteM,
+    output [31:0] aluoutM, writedataM,
+    input [31:0] readdataM);
     
-    logic [5:0] opD, functD, alucontrolE;
-    logic       regdstE, alusrcE,pcsrcD,memtoregE, memtoregM, 
-                memtoregW, regwriteE, regwriteM, regwriteW;
-    logic       flushE, equalD, branchD, jumpD, zeroextendD;
-    
+    logic [31:0] pcF;
+    logic [31:0] instrF;
+    logic [5:0] opD, functD;
+    logic regdstE, alusrcE,pcsrcD,
+          memtoregE, memtoregM, memtoregW, regwriteE, regwriteM, regwriteW;
+    logic [5:0] alucontrolE;
+    logic flushE, equalD, branchD, jumpD, zeroextendD;
     controller c(clk, reset, opD, functD, flushE, equalD,
-                memtoregE, memtoregM, memtoregW, memwriteM, 
-                pcsrcD, branchD,alusrcE, regdstE, regwriteE, 
-                regwriteM, regwriteW, jumpD,zeroextendD, alucontrolE);
+                memtoregE, memtoregM, memtoregW, memwriteM, pcsrcD, branchD,
+                alusrcE, regdstE, regwriteE, regwriteM, regwriteW, jumpD,
+                zeroextendD, alucontrolE);
     datapath dp(clk, reset, memtoregE, memtoregM, memtoregW, pcsrcD, branchD,
                 alusrcE, regdstE, regwriteE, regwriteM, regwriteW, jumpD,
-                zeroextendD, alucontrolE,equalD, pcF, instrF,aluoutM, writedataM, 
-                readdataM,opD, functD, flushE);
+                zeroextendD, alucontrolE,
+                equalD, pcF, instrF,
+                aluoutM, writedataM, readdataM,
+                opD, functD, flushE);
 endmodule
 
 //module for the control unit of the pipeline processor
@@ -58,7 +59,7 @@ module controller(  input logic clk, reset,
     // main decoder
     maindec md( opD, memtoregD, memwriteD, branchD,alusrcD, regdstD, 
                 regwriteD, jumpD,zeroextendD, aluopD);
-    
+
     // alu decoder
     aludec ad(functD, aluopD, alucontrolD);
     
@@ -113,7 +114,7 @@ module datapath(input logic clk, reset,
 	logic [31:0] readdataW, resultW;
 	
 	// Hazard Unit
-	hazard h(  rsD, rtD, rsE, rtE, writeregE, writeregM, writeregW,
+	hazard haz(  rsD, rtD, rsE, rtE, writeregE, writeregM, writeregW,
 	           regwriteE, regwriteM, regwriteW,
 	           memtoregE, memtoregM, branchD,
 	           forwardaD, forwardbD, forwardaE, forwardbE,
@@ -127,7 +128,7 @@ module datapath(input logic clk, reset,
 	// register file -used in decode and writeback
 	regfile rf(clk, regwriteW, rsD, rtD, writeregW,
 	           resultW, srcaD, srcbD);
-	
+               
 	//Fetch stage logic
 	flopenr #(32) pcreg(clk, reset, ~stallF, pcnextFD, pcF);
 	
@@ -192,9 +193,9 @@ module datapath(input logic clk, reset,
 	mux2 #(32) srcbmux(srcb2E, signimmE, alusrcE, srcb3E);
 	
 	// ALU
-	alu alu(srca2E, srcb3E, alucontrolE, aluoutE, aluoverflowE);
+	Alu alu(srca2E, srcb3E, alucontrolE, aluoutE, aluoverflowE);
 	
-	// Write register (rt or td)
+	// Write register (rt or rd)
 	mux2 #(5) wrmux(rtE, rdE, regdstE, writeregE);
 	
 	//-- Memory stage ---
@@ -211,41 +212,6 @@ module datapath(input logic clk, reset,
 	
 	// result selector (from ALU or Memory)
 	mux2 #(32) resmux(aluoutW, readdataW, memtoregW, resultW);
-endmodule
-
-// Hazard Unit
-module hazard(  input logic [4:0] rsD, rtD, rsE, rtE,
-                input logic [4:0] writeregE, writeregM, writeregW,
-                input logic       regwriteE, regwriteM, regwriteW,
-                input logic       memtoregE, memtoregM, branchD,
-                output logic      forwardaD, forwardbD,
-                output logic [1:0] forwardaE, forwardbE,
-                output logic      stallF, stallD, flushE);
-	logic lwstallD, branchstallD;
-	
-	// forwarding sources to D stage (branch equality)
-	assign forwardaD = (rsD != 0 & rsD == writeregM & regwriteM);
-	assign forwardbD = (rtD != 0 & rtD == writeregM & regwriteM);
-	
-	// forwarding sources to E stage (ALU)
-	always @(*)
-        begin
-            forwardaE = 2'b00; forwardbE = 2'b00;
-            if (rsE != 0)
-                if (rsE == writeregM & regwriteM) forwardaE = 2'b10;
-                else if (rsE == writeregW & regwriteW) forwardaE = 2'b01;
-            if (rtE != 0)
-                if (rtE == writeregM & regwriteM) forwardbE = 2'b10;
-                else if (rtE == writeregW & regwriteW) forwardbE = 2'b01;
-        end
-	// stalls
-	assign #1 lwstallD = memtoregE & (rtE == rsD | rtE == rtD);
-	assign #1 branchstallD = branchD &
-	           (regwriteE & (writeregE == rsD | writeregE == rtD) |
-	            memtoregM & (writeregM == rsD | writeregM == rtD));
-	assign #1 stallD = lwstallD | branchstallD;
-	assign #1 stallF = stallD; // stalling D stalls all previous stages
-	assign #1 flushE = stallD; // stalling D flushes next stage
 endmodule
 
 // adder
@@ -281,7 +247,7 @@ module flopr #(parameter WIDTH = 8)(
 	output logic [WIDTH-1:0] q);
 	always @(posedge clk, posedge reset)
 		if (reset) q <= #1 0;
-		else q <= #1 d;
+		else       q <= #1 d;
 endmodule
 
 // latch with clear
@@ -386,7 +352,7 @@ module aludec(input logic [5:0] funct,
 		4'b0101: alucontrol = 6'b0_00001; // ORI
 		4'b0110: alucontrol = 6'b0_00100; // XORI
 		4'b0111: alucontrol = 6'b0_00110; // LUI
-            4'b1111: case(funct) // RTYPE
+        4'b1111: case(funct) // RTYPE
             6'b100000: alucontrol = 6'b0_00010; // ADD
             6'b100001: alucontrol = 6'b0_00010; // ADDU
             6'b100010: alucontrol = 6'b1_00010; // SUB
@@ -426,31 +392,3 @@ module regfile (clk, w_enable, r_addr1, r_addr2, w_addr1, w_data1, r_data1, r_da
 	assign r_data2 = (r_addr2 != 0) ? rfile[r_addr2] : 0;
 endmodule
 
-module alu(
-	input logic [31:0] a, b, // operands
-	input logic [5:0] alucont, // control code from decoder
-	output logic [31:0] result, // result
-	output logic overflow ); // overflow
-	logic [31:0] b2, sum, slt;
-	// invert sign if substraction
-	assign #1 b2 = alucont[5] ? ~b : b;
-	// sum operands
-	assign #1 {overflow, sum} = a + b2 + alucont[5];
-	// check sign bit (32th)
-	assign #1 slt = sum[31];
-	// if any input changes, do:
-	always @(*) begin
-		case(alucont[4:0])
-		5'b00000: result = a & b; // AND, ANDI
-		5'b00001: result = a | b; // OR, ORI
-		5'b00010: result = sum; // sum: ADD, ADDI, ADDU, ADDUI, SUB, SUBI, SUBU, SUBUI
-		5'b00011: result = slt; // set if less than: SLT, SLTI
-		5'b00100: result = a ^ b; // XOR, XORI
-		5'b00101: result = ~(a | b); // NOR, NORI
-		5'b00110: result = {b, 16'b0}; // LUI
-		default: begin
-			$display("...Error: Unkown Funct", alucont);
-		end
-		endcase
-	end
-endmodule

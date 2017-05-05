@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="309815951fs"></ZoomStartTime>
-      <ZoomEndTime time="1138036810fs"></ZoomEndTime>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="95300001fs"></ZoomEndTime>
       <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="123"></NameColumnWidth>
-      <ValueColumnWidth column_width="65"></ValueColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="14" />
    <wvobject fp_name="/testbench/clk" type="logic">
@@ -28,19 +28,19 @@
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/writedata" type="array">
-      <obj_property name="ElementShortName">writedata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">writedata[31:0]</obj_property>
+   <wvobject fp_name="/testbench/writedataM" type="array">
+      <obj_property name="ElementShortName">writedataM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writedataM[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/dataadr" type="array">
       <obj_property name="ElementShortName">dataadr[31:0]</obj_property>
       <obj_property name="ObjectShortName">dataadr[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/memwrite" type="logic">
-      <obj_property name="ElementShortName">memwrite</obj_property>
-      <obj_property name="ObjectShortName">memwrite</obj_property>
+   <wvobject fp_name="/testbench/dut/memwriteM" type="logic">
+      <obj_property name="ElementShortName">memwriteM</obj_property>
+      <obj_property name="ObjectShortName">memwriteM</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/pcF" type="array">
+   <wvobject fp_name="/testbench/dut/mips/dp/pcF" type="array">
       <obj_property name="ElementShortName">pcF[31:0]</obj_property>
       <obj_property name="ObjectShortName">pcF[31:0]</obj_property>
    </wvobject>
@@ -52,27 +52,27 @@
       <obj_property name="ElementShortName">brjflush</obj_property>
       <obj_property name="ObjectShortName">brjflush</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/mips/dp/h/branchstallD" type="logic">
+   <wvobject fp_name="/testbench/dut/mips/dp/haz/branchstallD" type="logic">
       <obj_property name="ElementShortName">branchstallD</obj_property>
       <obj_property name="ObjectShortName">branchstallD</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/mips/dp/h/lwstallD" type="logic">
+   <wvobject fp_name="/testbench/dut/mips/dp/haz/lwstallD" type="logic">
       <obj_property name="ElementShortName">lwstallD</obj_property>
       <obj_property name="ObjectShortName">lwstallD</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/mips/dp/forwardaD" type="logic">
+   <wvobject fp_name="/testbench/dut/mips/dp/haz/forwardaD" type="logic">
       <obj_property name="ElementShortName">forwardaD</obj_property>
       <obj_property name="ObjectShortName">forwardaD</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/mips/dp/forwardbD" type="logic">
+   <wvobject fp_name="/testbench/dut/mips/dp/haz/forwardbD" type="logic">
       <obj_property name="ElementShortName">forwardbD</obj_property>
       <obj_property name="ObjectShortName">forwardbD</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/mips/dp/forwardaE" type="array">
+   <wvobject fp_name="/testbench/dut/mips/dp/haz/forwardaE" type="array">
       <obj_property name="ElementShortName">forwardaE[1:0]</obj_property>
       <obj_property name="ObjectShortName">forwardaE[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/dut/mips/dp/forwardbE" type="array">
+   <wvobject fp_name="/testbench/dut/mips/dp/haz/forwardbE" type="array">
       <obj_property name="ElementShortName">forwardbE[1:0]</obj_property>
       <obj_property name="ObjectShortName">forwardbE[1:0]</obj_property>
    </wvobject>

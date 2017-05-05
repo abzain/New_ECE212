@@ -1,7 +1,6 @@
-`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Lafayette College
+// Engineer: Zainab Hussein
 // 
 // Create Date: 04/25/2017 08:59:39 PM
 // Design Name: 
@@ -19,16 +18,14 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module top(input  logic        clk, reset, 
-           output logic [31:0] writedataM, adr, 
+           output logic [31:0] writedataM, dataadr, 
            output logic        memwriteM);
 
-  logic [31:0] readdataM, pcF, instrF, aluoutM;
+  logic [31:0] readdataM;
   
   // microprocessor (control & datapath)
-  //mips mips(clk, reset, adr, writedata, memwrite, readdata);
-  pipeline_mips mips( clk, reset, readdataM, instrF, pcF, memwriteM, aluoutM, writedataM );
-
+  pipeline_mips mips( clk, reset, memwriteM, dataadr, writedataM, readdataM );
   // memory 
-  mem mem(clk, memwriteM, adr, writedataM, readdataM);
+  mem mem(clk, memwriteM, dataadr, writedataM, readdataM);
 
 endmodule

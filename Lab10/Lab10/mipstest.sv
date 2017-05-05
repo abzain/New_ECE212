@@ -9,11 +9,11 @@ module testbench();
 
   logic        clk;
   logic        reset;
-  logic [31:0] writedata, dataadr;
-  logic        memwrite;
+  logic [31:0] writedataM, dataadr;
+  logic        memwriteM;
 
   // instantiate device to be tested
-  top dut(clk, reset, writedata, dataadr, memwrite);
+  top dut(clk, reset,writedataM, dataadr, memwriteM);
   
   // initialize test
   initial
@@ -30,8 +30,8 @@ module testbench();
   // check that 7 gets written to address 84
   always@(negedge clk)
     begin
-      if(memwrite) begin
-        if(dataadr === 84 & writedata === 7) begin      
+      if(memwriteM) begin
+        if(dataadr === 84 & writedataM === 7) begin      
           $display("Simulation succeeded");
           $stop;
         end else if (dataadr !== 80) begin

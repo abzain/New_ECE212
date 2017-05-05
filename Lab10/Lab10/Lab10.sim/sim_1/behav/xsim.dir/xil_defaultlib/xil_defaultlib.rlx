@@ -3,7 +3,9 @@
 Oct 10 2016
 19:46:48
 C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.sim/sim_1/behav/glbl.v,1476033524,verilog,,,,glbl,,,,,,,,
-C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/mem.sv,1493169112,systemVerilog,,,,mem,,,,,,,,
-C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/pipeline_mips.sv,1493773923,systemVerilog,,,,adder;alu;aludec;controller;datapath;eqcmp;flopenr;flopenrc;flopr;floprc;hazard;maindec;mux2;mux3;mux4;pipeline_mips;regfile;signext;sl2,,,,,,,,
-C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/top.sv,1493774851,systemVerilog,,,,top,,,,,,,,
-C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/mipstest.sv,1493169902,systemVerilog,,,,testbench,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/Alu.sv,1493959769,systemVerilog,,,,Alu,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/hazard.sv,1493958103,systemVerilog,,,,hazard,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/mem.sv,1493964021,systemVerilog,,,,mem,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/pipeline_mips.sv,1493963889,systemVerilog,,,,adder;aludec;controller;datapath;eqcmp;flopenr;flopenrc;flopr;floprc;maindec;mux2;mux3;mux4;pipeline_mips;regfile;signext;sl2,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/top.sv,1493963937,systemVerilog,,,,top,,,,,,,,
+C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/mipstest.sv,1493964142,systemVerilog,,,,testbench,,,,,,,,
