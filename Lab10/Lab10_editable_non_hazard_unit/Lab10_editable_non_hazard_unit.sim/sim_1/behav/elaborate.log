@@ -1,0 +1,88 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto d365487496c64ac385f7f10113692144 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/top.sv" Line 21. Module top has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 20. Module pipeline_mips has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 47. Module controller has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 350. Module maindec has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 381. Module aludec has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=11) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=3) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 88. Module datapath has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 326. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 326. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 419. Module regfile has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 303. Module flopenr(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 256. Module adder has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 314. Module flopenrc(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 303. Module flopenr(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 275. Module signext has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 268. Module sl2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 256. Module adder has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 326. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 326. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 262. Module eqcmp has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 334. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 334. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 326. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 433. Module alu has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 326. Module mux2(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 326. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/mem.sv" Line 23. Module mem has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_editable_non_hazard_unit/Lab10_editable_non_hazard_unit.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/top.sv" Line 21. Module top has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 20. Module pipeline_mips has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 47. Module controller has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 350. Module maindec has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 381. Module aludec has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 292. Module floprc(WIDTH=11) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=3) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_no_hazard_unit/pipeline_mips.sv" Line 282. Module flopr(WIDTH=2) has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.floprc(WIDTH=11)
+Compiling module xil_defaultlib.flopr(WIDTH=3)
+Compiling module xil_defaultlib.flopr(WIDTH=2)
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.flopenr(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.flopenrc(WIDTH=32)
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.eqcmp
+Compiling module xil_defaultlib.floprc(WIDTH=32)
+Compiling module xil_defaultlib.floprc(WIDTH=5)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.flopr(WIDTH=5)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.pipeline_mips
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
