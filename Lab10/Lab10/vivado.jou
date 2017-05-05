@@ -1,50 +1,159 @@
 #-----------------------------------------------------------
-<<<<<<< HEAD
-# Vivado v2016.3 (64-bit)
-# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
-# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu May 04 19:25:03 2017
-# Process ID: 4744
-# Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3496 C:\Users\husseinz\Desktop\New_ECE212\Lab10\Lab10\Lab10.xpr
-=======
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed May 03 15:21:39 2017
-# Process ID: 4924
+# Start of session at: Fri May 05 12:41:21 2017
+# Process ID: 9852
 # Current directory: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4928 C:\Users\husseinz\Desktop\New_ECE212\Lab10\Lab10\Lab10.xpr
->>>>>>> origin/master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9372 C:\Users\husseinz\Desktop\New_ECE212\Lab10\Lab10\Lab10.xpr
 # Log file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/vivado.log
 # Journal file: C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.xpr
-<<<<<<< HEAD
-close [ open C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/hazard.sv w ]
-add_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/hazard.sv
-close [ open C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/Alu.sv w ]
-add_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/Lab10.srcs/sources_1/new/Alu.sv
-=======
 update_compile_order -fileset sources_1
-save_project_as Lab10_editable C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_editable -force
->>>>>>> origin/master
+save_project_as Lab10_final C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final -force
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg
+source testbench.tcl
+close_sim
 launch_simulation
 open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg
 source testbench.tcl
 relaunch_sim
-<<<<<<< HEAD
+remove_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/top.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/pipeline_mips.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/Alu.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/hazard.sv
+update_compile_order -fileset sources_1
+remove_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/mem.sv
+update_compile_order -fileset sources_1
+remove_files -fileset sim_1 C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/mipstest.sv
+update_compile_order -fileset sim_1
+remove_files C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/memfile.dat
+remove_files -fileset sim_1 C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg
+add_files -norecurse {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/pipeline_mips.sv C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/mem.sv C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/top.sv C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/hazard.sv C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/Lab10_final.srcs/sources_1/new/Alu.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/mipstest.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/memfile.dat
+close_sim
+launch_simulation
+source testbench.tcl
 relaunch_sim
 relaunch_sim
 relaunch_sim
-save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg}
-save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg}
+relaunch_sim
+run 10 ms
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
-=======
->>>>>>> origin/master
-save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+set_property xsim.view {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10/testbench_behav.wcfg C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg}
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg}
+save_wave_config {C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
+run 10 ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/husseinz/Desktop/New_ECE212/Lab10/Lab10_final/testbench_behav.wcfg
+source testbench.tcl
 close_sim
